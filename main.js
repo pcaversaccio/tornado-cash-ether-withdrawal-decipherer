@@ -26,7 +26,7 @@ const csvWriter = createCsvWriter({
 const baseUrl = 'https://api.etherscan.io/api?module=account&action=txlistinternal&txhash=';
 const data = require('./data.json'); // Data with the transaction hashes
 
-for (let i = 1110; i < data.length; i++) {
+for (let i = 0; i < data.length; i++) {
     const response = await fetch(`${baseUrl}${data[i]}&apikey=${process.env.ETHERSCAN_API_KEY}`);
     const res = await response.json();
 
@@ -51,5 +51,6 @@ for (let i = 1110; i < data.length; i++) {
         }
     ];
         csvWriter.writeRecords(out);
-    }
+    };
+    console.log('Iteration step: ', i)
 }
