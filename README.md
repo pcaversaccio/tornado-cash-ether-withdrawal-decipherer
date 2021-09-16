@@ -1,0 +1,2 @@
+# Deciphering the Ether Transactions in the Tornado.Cash Withdrawals
+Ether withdrawals at [Tornado.Cash](https://tornado.cash) are recorded as [internal transactions](https://info.etherscan.com/understanding-an-ethereum-transaction). To perform a correlation analysis, it is very useful to have the underlying Ether withdrawal transaction data. I use the Etherscan API to retrieve the data and decrypt the internal transactions. This is not magic, but an important structuring process.
