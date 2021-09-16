@@ -43,6 +43,14 @@ for (let i = 0; i < data.length; i++) {
         }
     ];
     csvWriter.writeRecords(out);
+    } else if (res.result.length == 1) {
+        const out = [{
+            hash: data[i],
+            address: res.result[0].to,
+            value: res.result[0].value
+        }
+    ];
+    csvWriter.writeRecords(out);
     } else {
         const out = [{
             hash: data[i],
@@ -50,7 +58,7 @@ for (let i = 0; i < data.length; i++) {
             value: 'N/A'
         }
     ];
-        csvWriter.writeRecords(out);
+    csvWriter.writeRecords(out);
     };
     console.log('Iteration step: ', i)
 }
