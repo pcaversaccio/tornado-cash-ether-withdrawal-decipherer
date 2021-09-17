@@ -13,9 +13,7 @@ Assuming you have installed a modern version of [Node.js](https://nodejs.org/en)
     "0xcf20018eaa16807a42e4d3e317995266052d385f817fe46e301585821c749c7b",
     "0x5cec75fd2f2c676a813dd4fa497b1b865dfab1a04044345ee6171c1c0059d993",
     "0xbd37119d7273123c4a46e5f8bdcc11a47a8519fecddc78e2330abd837880fba6",
-    .
-    .
-    .
+    ︙
     "0xfdc04e88dc0c7c660c7515611f4ae7700449694047b6ee9ce4bb08297d3b0db4",
     "0xabe430c0a4a7154ff02285ca93393d4492b7cc1a3f887887ae352dda52d3ba60"
 ]
